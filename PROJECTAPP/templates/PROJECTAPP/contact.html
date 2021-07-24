@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PakParse</title>
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'media/iconLOGO.png' %}" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/cssfile.css' %}" />
+		<link rel="stylesheet" type="text/css" href="{% static 'css/fontawesome.min.css' %}" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/skel.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+
+		<style>
+	@media screen and (max-width: 600px) {
+  		#hamnosysdata {
+		display:none;
+	  }
+	}
+		</style>
+	</head>
+	<body>
+
+			<!-- Header -->
+			<header id="header" style="background-color:000;" >
+				<a href="{% url 'home-page' %}"><img style="width: 70px; height: 70px;margin-top:0.5%;" class="logo" src="{% static 'media/logo.png' %}" alt="" ></a>
+				<h1 style="margin-left:65px; position:reletive;margin-top:8px;"><strong>Pak</strong>Parse</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="{% url 'home-page' %}">Home</a></li>
+						<li><a href="{% url 'demo-page' %}">Demo</a></li>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper" style="background-color:#eeeeee;">
+				<div class="container" style="background-image:url('{% static "media/contactBG.JPG" %}'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;" >
+<!-- <div class="container" style="background-image:url('{% static "media/100.png" %}'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"> -->
+				<h2>Research Related</h2>
+				<h1><b>Dr. Muhammad Asif Habib</b></h1>
+				<h1>Principle Investigator (PI)</h1>
+				<h1>dr.m.asif.habib@gmail.com</h1>
+				<br>
+				<h1><b>Dr. Haseeb Ahmad</b></h1>
+				<h1>Co-Principle Investigator (Co-PI)</h1>
+				<h1>haseebahmed@hotmail.com</h1>
+				<br>
+				<h2>System/Development Related</h2>
+				<h1><b>Rana Arsal Mahmood</b></h1>
+				<h1>Junior Research Fellow</h1>
+				<h1>arsalmehmood@yahoo.com</h1>
+				<h1 id="hamnosysdata">For generation of HamNoSys Handshapes and Orientation, Click <a href="{% url 'hamnosys' %}"><u style="font-size:12px;">HamNoSys Generator</u></a> </h1>
+				<br>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+						<ul class="icons">
+						<li><a href="https://www.facebook.com/"> <img class="socialicons" src="{% static 'media/fbON.png' %}" alt="" ></a></li>
+						<li><a href="https://www.instagram.com/"> <img class="socialicons" src="{% static 'media/instaON.png' %}" alt="" > </a> </li>
+						<li><a href="https://twitter.com/"> <img class="socialicons" src="{% static 'media/twitterON.png' %}" alt="" > </a> </li>
+
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Pak'Parse</li>
+						<li>Designed by: Arsal Mahmood</li>
+						<li>Made in Pakistan</li>
+					</ul>
+				</div>
+			</footer>
+
+
+	</body>
+</html>
